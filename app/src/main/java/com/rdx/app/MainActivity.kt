@@ -1,11 +1,9 @@
 package com.rdx.app
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,15 +11,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val a = findViewById(R.id.text1) as TextView
 
-        /*a.setOnClickListener {
-            intent=Intent(this,MainActivity2::class.java);
-            startActivity(intent);
-        }*/
+        /*  //Intent
+          a.setOnClickListener {
+              intent=Intent(this,MainActivity2::class.java);
+              startActivity(intent);
+          }*/
 
-        /*a.setOnClickListener{
-            Toast.makeText(this,"hello",Toast.LENGTH_LONG).show();
-        }*/
 
+        /*   //Toast
+           a.setOnClickListener{
+               Toast.makeText(this,"hello",Toast.LENGTH_LONG).show();
+           }*/
+
+
+/*       //AlertDialog
         a.setOnClickListener {
             val pop = AlertDialog.Builder(this);
             pop.setTitle("Alert");
@@ -35,12 +38,22 @@ class MainActivity : AppCompatActivity() {
                 var i = Intent(this, MainActivity2::class.java);
                 startActivity(i);
             }
-
+            pop.setCancelable(true);
             pop.show();
+        }*/
 
+    /* a.setOnClickListener{
+            data("pratik");
+        }*/
 
-        }
 
 
     }
+
+
+    /*fun data(a:String) {
+     Toast.makeText(this,"multi"+a,Toast.LENGTH_LONG).show()
+    }*/
+
+
 }
